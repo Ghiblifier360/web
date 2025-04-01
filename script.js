@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // so we don't need the click handler for it anymore
     
     // Predefined Ghibli image for the prank
-    const ghibliImage = 'assets/download-prank.jpg';
+    const ghibliImage = 'assets/download.jpg';
     
     // Processing simulation steps
     const processingSteps = [
