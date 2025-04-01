@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhibliAI - Transform Your Photos</title>
+    <link rel="icon" href="assets/image.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-magic"></i> GhibliAI
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><span class="nav-link active">Home</span></li>
+                <li class="nav-item"><a href="#features-section" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="nav-button login-btn">Sign In</a>
+                <!-- Theme toggle button removed -->
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-magic"></i> GhibliAI
+            </div>
+            <h1>Studio Ghibli Art Style Generator</h1>
+            <p>Transform your photos into magical Ghibli-inspired artwork with our advanced AI</p>
+            <div class="badge-container">
+                <span class="badge"><i class="fas fa-bolt"></i> Powered by GAN Technology</span>
+                <span class="badge"><i class="fas fa-clock"></i> 5-10 seconds processing</span>
+                <span class="badge"><i class="fas fa-image"></i> High-res output</span>
+            </div>
+        </header>
+        
+        <main>
+            <section class="upload-section">
+                <h2><i class="fas fa-upload"></i> Upload Your Image</h2>
+                <p>Select an image to transform into Ghibli art style. For best results, use photos with clear subjects and good lighting.</p>
+                <div class="file-requirements">
+                    <span><i class="fas fa-check-circle"></i> JPG, PNG formats</span>
+                    <span><i class="fas fa-check-circle"></i> Max 10MB file size</span>
+                    <span><i class="fas fa-check-circle"></i> Minimum 1000px width</span>
+                </div>
+                <div class="upload-container">
+                    <label for="imageUpload" class="upload-btn"><i class="fas fa-file-upload"></i> Choose Image</label>
+                    <input type="file" id="imageUpload" accept="image/*" hidden>
+                </div>
+            </section>
+            
+            <section class="features-section" id="features-section">
+                <h2><i class="fas fa-sparkles"></i> Key Features</h2>
+                <p class="section-description">Discover what makes GhibliAI so magical</p>
+                
+                <div class="features-container">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Advanced Style Transfer</h3>
+                        <p>Our AI uses deep learning to capture the essence of Ghibli's distinctive watercolor and hand-drawn animation style.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Multiple Film Styles</h3>
+                        <p>Choose from different Ghibli film styles, including Spirited Away, Howl's Moving Castle, and My Neighbor Totoro.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Lightning Fast</h3>
+                        <p>Transform your photos in seconds with our optimized cloud-based AI processing system.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sliders"></i>
+                        </div>
+                        <h3>Customization Options</h3>
+                        <p>Fine-tune your transformations with adjustable settings for color intensity, detail level, and stylization strength.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Privacy First</h3>
+                        <p>Your uploads are private and secure. We never store or use your images to train our AI models.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>High Resolution Output</h3>
+                        <p>Get beautiful high-resolution transformations suitable for printing, social media, and digital displays.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="sample-section">
+                <h2><i class="fas fa-images"></i> Sample Transformations</h2>
+                <div class="sample-gallery">
+                    <div class="sample">
+                        <div class="sample-before">
+                            <img src="assets/before1.jpg" alt="Original landscape photo">
+                            <span>Original</span>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="sample-after">
+                            <img src="assets/after1.jpg" alt="Ghibli styled landscape">
+                            <span>GhibliAI</span>
+                        </div>
+                    </div>
+                    <div class="sample">
+                        <div class="sample-before">
+                            <img src="assets/before2.jpg" alt="Original portrait">
+                            <span>Original</span>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="sample-after">
+                            <img src="assets/after2.jpg" alt="Ghibli styled portrait">
+                            <span>GhibliAI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="result-section" id="resultSection">
+                <div class="original-image">
+                    <h3><i class="fas fa-image"></i> Your Image</h3>
+                    <img id="originalImg" src="#" alt="Your uploaded image">
+                </div>
+                
+                <div class="ai-options">
+                    <h3><i class="fas fa-sliders-h"></i> Style Options</h3>
+                    <div class="option-buttons">
+                        <button class="style-btn active">Spirited Away</button>
+                        <button class="style-btn">Howl's Moving Castle</button>
+                        <button class="style-btn">My Neighbor Totoro</button>
+                    </div>
+                </div>
+                
+                <button id="generateBtn" class="generate-btn"><i class="fas fa-magic"></i> Generate Ghibli Art</button>
+                
+                <div class="processing" id="processing">
+                    <div class="spinner-container">
+                        <div class="spinner"></div>
+                        <div class="spinner-inner"></div>
+                    </div>
+                    <p class="processing-text">Our AI is working its magic...</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <div class="processing-steps">
+                        <p id="currentStep">Analyzing image composition...</p>
+                    </div>
+                </div>
+                
+                <div class="download-container" id="downloadContainer">
+                    <div class="success-checkmark">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <p class="success-message">Your Ghibli artwork is ready!</p>
+                    <button id="downloadBtn" class="download-btn"><i class="fas fa-download"></i> Download Artwork</button>
+                    <div class="share-options">
+                        <p>Share your creation:</p>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn" id="facebook-share"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-btn" id="twitter-share"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn" id="whatsapp-share"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-btn" id="instagram-share"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="pricing-section" id="pricing-section">
+                <h2><i class="fas fa-tags"></i> Pricing Plans</h2>
+                <p class="section-description">Choose the perfect plan for your creative needs</p>
+                
+                <div class="pricing-container">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Free</h3>
+                            <div class="pricing-price">$0<span>/month</span></div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 5 image transformations</li>
+                                <li><i class="fas fa-check"></i> Basic Ghibli styles</li>
+                                <li><i class="fas fa-check"></i> Standard resolution</li>
+                                <li><i class="fas fa-times"></i> No watermark</li>
+                                <li><i class="fas fa-times"></i> Advanced settings</li>
+                            </ul>
+                        </div>
+                        <button class="pricing-btn">Get Started</button>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                            <div class="pricing-price">$9.99<span>/month</span></div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 100 image transformations</li>
+                                <li><i class="fas fa-check"></i> All Ghibli styles</li>
+                                <li><i class="fas fa-check"></i> High resolution</li>
+                                <li><i class="fas fa-check"></i> No watermark</li>
+                                <li><i class="fas fa-check"></i> Basic settings control</li>
+                            </ul>
+                        </div>
+                        <button class="pricing-btn">Try Premium</button>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <div class="pricing-price">$19.99<span>/month</span></div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Unlimited transformations</li>
+                                <li><i class="fas fa-check"></i> All Ghibli styles + exclusives</li>
+                                <li><i class="fas fa-check"></i> Ultra HD resolution</li>
+                                <li><i class="fas fa-check"></i> No watermark</li>
+                                <li><i class="fas fa-check"></i> Full settings control</li>
+                                <li><i class="fas fa-check"></i> Priority processing</li>
+                            </ul>
+                        </div>
+                        <button class="pricing-btn">Go Pro</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="testimonial-section">
+                <h2><i class="fas fa-star"></i> User Reviews</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>"I couldn't believe how magical my photos became! Just like stepping into a Ghibli movie."</p>
+                        <div class="user">- Sarah K.</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>"The transformation was amazing. My kids love seeing themselves as Ghibli characters!"</p>
+                        <div class="user">- Mark T.</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Incredible results in seconds. This AI definitely captures the Ghibli essence."</p>
+                        <div class="user">- Jenna W.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GhibliAI</h3>
+                    <p>Transform your photos into magical Ghibli-inspired artwork with our cutting-edge AI technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Note: This is just for fun and not affiliated with Studio Ghibli.</p>
+                <p>&copy; 2023 GhibliAI - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

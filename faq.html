@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - GhibliAI</title>
+    <link rel="icon" href="assets/image.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><i class="fas fa-magic"></i> GhibliAI</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#features-section" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="index.html#pricing-section" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="faq.html" class="nav-link active">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="nav-button login-btn">Sign In</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1><i class="fas fa-question-circle"></i> Frequently Asked Questions</h1>
+            <p>Everything you need to know about GhibliAI</p>
+        </header>
+        
+        <main>
+            <section class="faq-section">
+                <div class="faq-categories">
+                    <button class="category-btn active" data-category="general">General</button>
+                    <button class="category-btn" data-category="technical">Technical</button>
+                    <button class="category-btn" data-category="pricing">Pricing</button>
+                    <button class="category-btn" data-category="usage">Usage</button>
+                </div>
+                
+                <div class="faq-container" id="general">
+                    <h2 class="faq-category-title">General Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is GhibliAI?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GhibliAI is an advanced AI tool that transforms your photos into artwork inspired by Studio Ghibli's distinctive animation style. Using state-of-the-art generative adversarial networks (GANs), our system analyzes your images and recreates them with the magical, hand-painted look that Ghibli films are famous for.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is GhibliAI affiliated with Studio Ghibli?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, GhibliAI is not affiliated with, endorsed by, or connected to Studio Ghibli in any way. We're simply fans creating a tool that pays homage to their distinctive art style. All original Studio Ghibli artwork and intellectual property belongs to Studio Ghibli.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How accurate are the transformations?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our AI model has been trained on thousands of frames from Studio Ghibli films to capture their distinctive style. While no AI can perfectly replicate the magic of hand-drawn animation by master artists, our system creates impressive transformations that capture the essence, color palette, and visual characteristics of Ghibli's artwork.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-container hidden" id="technical">
+                    <h2 class="faq-category-title">Technical Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What image formats are supported?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GhibliAI supports JPG, PNG, and WEBP image formats. For optimal results, we recommend using high-quality images with clear subjects and good lighting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a size limit for uploaded images?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, the maximum file size for uploads is 10MB. Images must be at least 1000px in width for the best results. If your image is larger, you may need to resize it before uploading.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How does the AI technology work?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GhibliAI uses a custom implementation of StyleGAN3 neural network architecture, specifically optimized for Ghibli-style transformations. Our model was trained on over 50,000 carefully selected frames from Studio Ghibli films, learning to recognize and recreate the distinctive features, color palettes, and brush stroke patterns that define the Ghibli look.</p>
+                            <p>The transformation process happens in multiple stages:</p>
+                            <ol>
+                                <li>Image analysis and composition detection</li>
+                                <li>Subject recognition and separation</li>
+                                <li>Stylistic transformation of subjects and backgrounds</li>
+                                <li>Color palette adjustment</li>
+                                <li>Texture and brush stroke application</li>
+                                <li>Final enhancement and detailing</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-container hidden" id="pricing">
+                    <h2 class="faq-category-title">Pricing Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I try GhibliAI for free?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Our free plan allows you to transform up to 5 images per month at standard resolution. This is a great way to test our service and see the quality of transformations before committing to a paid plan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What do the premium plans include?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our premium plans offer additional features and higher usage limits:</p>
+                            <ul>
+                                <li><strong>Premium ($9.99/month)</strong>: 100 transformations per month, high resolution output, all Ghibli styles, no watermarks, and basic setting controls.</li>
+                                <li><strong>Professional ($19.99/month)</strong>: Unlimited transformations, ultra HD resolution, exclusive styles, no watermarks, full setting controls, and priority processing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I cancel my subscription at any time?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can cancel your subscription at any time from your account settings. You'll continue to have access to your plan's features until the end of your current billing cycle, at which point your account will revert to the free plan.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-container hidden" id="usage">
+                    <h2 class="faq-category-title">Usage Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does the transformation process take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most transformations are completed within 5-10 seconds, depending on the complexity of the image and current server load. Professional plan users receive priority processing for even faster results.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What kind of images work best with GhibliAI?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GhibliAI works best with clear, well-lit images with distinct subjects. Landscapes, portraits, and nature scenes tend to produce the most impressive results. The system can handle complex images, but simpler compositions often yield more dramatic transformations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use the transformed images commercially?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The images you create with GhibliAI are for personal use only. Commercial use is not permitted as the style is inspired by Studio Ghibli's artwork, which is protected by copyright. Additionally, you must own the rights to the original images you upload for transformation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are my uploaded images kept private?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, privacy is important to us. Your uploaded images and the resulting transformations are private and only accessible to you. We do not use your images for training our AI or share them with third parties without your consent.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-section">
+                <h2><i class="fas fa-envelope"></i> Still Have Questions?</h2>
+                <p>We're here to help! If you couldn't find the answer to your question in our FAQ, please feel free to contact our support team.</p>
+                <a href="#" class="contact-btn">Contact Support</a>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GhibliAI</h3>
+                    <p>Transform your photos into magical Ghibli-inspired artwork with our cutting-edge AI technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Note: This is just for fun and not affiliated with Studio Ghibli.</p>
+                <p>&copy; 2023 GhibliAI - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="faq.js"></script>
+</body>
+</html>
